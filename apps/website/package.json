@@ -1,0 +1,13 @@
+{
+  "name": "website",
+  "scripts": {
+    "build": "npx babel ./src/js --out-dir ./dist"
+  },
+  "dependencies": {
+    "@babel/core": "latest",
+    "@babel/cli": "latest",
+    "@babel/preset-react": "latest",
+    "react": "^16",
+    "react-dom": "^16"
+  }
+}

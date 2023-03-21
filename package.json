@@ -1,0 +1,23 @@
+{
+  "name": "turbopack-webpack-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:dev",
+    "build:dev": "NODE_ENV=development npx webpack --mode=development",
+    "build:prod": "NODE_ENV=production npx webpack --mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^9.1.2",
+    "gulp-util": "^3.0.8",
+    "less": "^4.1.3",
+    "webpack-config": "0.0.1"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}
